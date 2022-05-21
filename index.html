@@ -1,1 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Ruihong Li - Modal Window</title>
+  </head>
+  <body>
+    <h1 class="bg-light text-danger" style="text-align:center;padding:1em;font-family:'monotype corsiva'">Cat Gamble Center</h1>
+    <div class="container-fluid row" style="margin:1em;">
+
+        <!-- card of item 1 -->
+    <div class="card col-lg-3 col-md-5" style="margin:0.5em; height:500px;">
+        <img src="1.jpg" alt="cat" title="orange cat" style="height:50%; padding:1em;" class="d-block mx-auto">
+        <div class="card-body" style="text-align:center">
+          <h5>Orange Cat</h5>
+          <p style="font-size:0.8em; text-align:center">Orange Box</p>
+          <h3 class="text-danger">$7.50</h3>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#item1">Add to cart</button>
+        </div>
+    </div>
+        <!-- card of item 2 -->
+    <div class="card col-lg-3 col-md-5" style="margin:0.5em; height:500px;">
+        <img src="2.jpg" alt="cat" title="ragdoll cat" style="height:50%; padding:1em;" class="d-block mx-auto">
+        <div class="card-body" style="text-align:center">
+          <h5>Ragdoll</h5>
+          <p style="font-size:0.8em; text-align:center">Cute Box</p>
+          <h3 class="text-danger">$10.51</h3>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#item2">Add to cart</button>
+        </div>
+    </div>
+        <!-- card of item 3 -->
+    <div class="card col-lg-3 col-md-5" style="margin:0.5em; height:500px;">
+        <img src="box.jpg" alt="cat" title="cat box" style="height:50%; padding:1em;" class="d-block mx-auto">
+        <div class="card-body" style="text-align:center">
+          <h5>Random Cat Box</h5>
+          <p style="font-size:0.8em; text-align:center">Cat Box</p>
+          <h3 class="text-danger">$8</h3>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#item3">Add to cart</button>
+        </div>
+    </div>
+  </div>
+
+    <!-- MODAL WINDOWS -->
+    <!-- modal window for item 1-->
+    <div class="modal" id="item1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <div class="modal-title">
+                Sold Out!
+              </div>
+              <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+           </div>
+           <!-- modal body-->
+           <div class="modal-body">
+             <img src="1.jpg" alt="image of hand soap" title="orange cat" class="float-start" style="width:30%; padding:1em;">
+             <div style="text-align:center;">
+               <h5>Orange Cat</h5>
+               <p style="font-size:0.8em;">open Orange Box</p>
+               <i style="font-size:0.8em;">10% chance to get an orange cat</i>
+               <p class="text-danger" style="font-size:2em; margin-top:1em;">$10.50 each</p>
+               <s>was $15.50</s>
+             </div>
+           </div>
+           <!-- modal footer -->
+           <div class="modal-footer">
+             <button type="button" data-bs-dismiss="modal" class="btn btn-danger">Continue Shopping</button>
+
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal window for item 2-->
+    <div class="modal" id="item2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <div class="modal-title">
+              It's in the bag!
+            </div>
+            <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+         </div>
+         <!-- modal body-->
+         <div class="modal-body">
+           <img src="2.jpg" alt="image of cat" title="orange cat" class="float-start" style="width:30%; padding:1em;">
+           <div style="text-align:center;">
+             <h5>Orange Cat</h5>
+             <p style="font-size:0.8em;">open Cute Box</p>
+             <i style="font-size:0.8em;">10% chance to get a ragdoll cat </i>
+             <p class="text-danger" style="font-size:2em; margin-top:1em;">$10.51 each</p>
+             <s>was $15.50</s>
+           </div>
+         </div>
+         <!-- modal footer -->
+         <div class="modal-footer">
+           <button type="button" data-bs-dismiss="modal" class="btn btn-danger">Continue Shopping</button>
+
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal window for item 3-->
+        <div class="modal" id="item3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <div class="modal-title">
+                  It's in the bag!
+                </div>
+                <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+             </div>
+             <!-- modal body-->
+             <div class="modal-body">
+               <img src="box.jpg" alt="image of cat box" title="orange cat" class="float-start" style="width:30%; padding:1em;">
+               <div style="text-align:center;">
+                 <h5>Random Cat Box</h5>
+                 <p style="font-size:0.8em;">open cat Box</p>
+                 <i style="font-size:0.8em;">15% chance to get a cat</i>
+                 <p class="text-danger" style="font-size:2em; margin-top:1em;">$8 each</p>
+                 <p style="font-size:0.8em;">buy 10 get 1 free</p>
+               </div>
+             </div>
+             <!-- modal footer -->
+             <div class="modal-footer">
+               <button type="button" data-bs-dismiss="modal" class="btn btn-danger">Continue Shopping</button>
+
+             </div>
+            </div>
+          </div>
+        </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
